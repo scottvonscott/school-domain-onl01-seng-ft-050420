@@ -29,6 +29,8 @@ class School
     sorted = {}
     @roster.collect do |grade, student|
       sorted[grade] << student.sort
+    end
+    sorted
 end
   end
 end
